@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Edges & Interiors | Independent Design Journal</title>
+  <meta name="description" content="Learn about Edges & Interiors—an independent editorial publication covering interior design, architecture, and material culture. Our mission, editorial team, and values.">
+  <meta name="author" content="Edges & Interiors Editorial">
+  <link rel="canonical" href="https://www.edgesandinteriors.com/about.html">
+  <meta property="og:title" content="About — Edges & Interiors">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, and material culture. Meet the team and read our manifesto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.edgesandinteriors.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ---------- RESET & VARIABLES (inherited from main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #2c2c2c;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border: #e0dbd4;
+      --border-dark: #cbc4bb;
+      --accent: #9b6b4b;
+      --accent-soft: #b38b6d;
+      --muted: #6f6a64;
+      --muted-light: #9e968e;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --radius-sm: 2px;
+      --radius-md: 4px;
+      --radius-lg: 8px;
+      --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.04), 0 12px 28px rgba(0, 0, 0, 0.04);
+      --max-width: 1280px;
+      --font-size-base: 1.0625rem;
+      --line-height-base: 1.75;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 100%;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: var(--line-height-base);
+      font-size: var(--font-size-base);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+    }
+
+    .meta .category {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(250, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .logo span {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin: 3.5rem 0 4rem;
+    }
+
+    .about-hero-content h1 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-hero-content .subhead {
+      font-size: 1.2rem;
+      color: var(--muted);
+      font-family: var(--serif);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-card);
+    }
+
+    .manifesto-section {
+      background: var(--paper-warm);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 3rem;
+      margin: 4rem 0;
+    }
+
+    .manifesto-section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--ink);
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .manifesto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    .manifesto-item h4 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .manifesto-item p {
+      font-size: 1rem;
+      color: var(--ink-soft);
+      margin-bottom: 0;
+    }
+
+    .team-section {
+      margin: 4rem 0;
+    }
+
+    .team-section h2 {
+      margin-bottom: 2.5rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+
+    .team-member {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.25s ease;
+    }
+
+    .team-member:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    .team-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1.25rem;
+      border: 2px solid var(--paper-warm);
+    }
+
+    .team-member h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .team-role {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .team-bio {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .values-section {
+      margin: 5rem 0;
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .values-section h2 {
+      margin-bottom: 2rem;
+    }
+
+    .values-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .value-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .value-number {
+      font-family: var(--serif);
+      font-size: 2rem;
+      color: var(--accent-soft);
+      line-height: 1;
+      min-width: 2rem;
+      font-style: italic;
+    }
+
+    .value-item p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .contact-cta {
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 2.5rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .contact-cta h3 {
+      color: var(--paper);
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-cta p {
+      color: var(--muted-light);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-cta a {
+      display: inline-block;
+      background: var(--paper);
+      color: var(--ink);
+      padding: 0.9rem 2.2rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .contact-cta a:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 0 2.5rem;
+      margin-top: 3rem;
+      background: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-light);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted-light);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .about-hero-image img {
+        height: 300px;
+      }
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.7rem; }
+      .about-hero-content h1 {
+        font-size: 2.2rem;
+      }
+      .manifesto-section {
+        padding: 2.5rem 1.75rem;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1rem; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-cta {
+        padding: 2.5rem 1.5rem;
+      }
+      .about-hero-content h1 {
+        font-size: 1.9rem;
+      }
+    }
+
+    /* utility */
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Edges <span>&</span> Interiors</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <div class="meta" style="margin-bottom: 1.5rem;">
+          <span class="category">About the Publication</span>
+        </div>
+        <h1>Writing the built environment with depth & intention.</h1>
+        <p class="subhead">Edges & Interiors is an independent journal of interior design, architecture, and material culture—founded on the belief that thoughtful writing can elevate the way we inhabit space.</p>
+        <p style="font-size: 1.05rem;">We publish long-form essays, practical guides, and critical perspectives for designers, architects, and discerning homeowners. No trends. No sponsored fluff. Just honest, researched, and beautifully considered journalism.</p>
+      </div>
+      <div class="about-hero-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Minimal editorial workspace with architectural drawings and a laptop, reflecting the journal's thoughtful approach.">
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto-section">
+      <h2>Our Manifesto</h2>
+      <div class="manifesto-grid">
+        <div class="manifesto-item">
+          <h4>Depth over speed</h4>
+          <p>We take time to research, interview, and refine. Every article is written to be read slowly—and to remain useful years from now.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>No sponsored content</h4>
+          <p>Our editorial is entirely independent. We do not accept payment for coverage, and we clearly label any partnerships or advertisements.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>Material honesty</h4>
+          <p>We celebrate materials that reveal their origins—raw wood, stone, metal, concrete—and the craftspeople who shape them.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>Design as generosity</h4>
+          <p>Good design serves people and planet. We champion spaces that are sustainable, humane, and quietly beautiful.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>Critical, not cynical</h4>
+          <p>We ask hard questions about the built environment, but always with a constructive spirit and a love for the discipline.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>Global, local</h4>
+          <p>Our perspective is international, but we pay close attention to regional materials, climate, and craft traditions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team-section">
+      <h2>The Editorial Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80" alt="Portrait of Elena Marchetti.">
+          <h4>Elena Marchetti</h4>
+          <div class="team-role">Editor-in-Chief</div>
+          <p class="team-bio">Elena is an architectural writer and former interior architect. She founded Edges & Interiors in 2018 to create a space for slow, considered writing about the built environment.</p>
+        </div>
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Portrait of James Okafor.">
+          <h4>James Okafor</h4>
+          <div class="team-role">Senior Editor, Architecture</div>
+          <p class="team-bio">James is a registered architect and critic. He leads our architecture coverage, with a particular interest in adaptive reuse and public space.</p>
+        </div>
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80" alt="Portrait of Sofia Lindqvist.">
+          <h4>Sofia Lindqvist</h4>
+          <div class="team-role">Editor, Materials & Interiors</div>
+          <p class="team-bio">Sofia is a materials specialist and interior designer. She writes about sustainable finishes, craft, and the sensory experience of space.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section">
+      <h2>What guides us</h2>
+      <div class="values-list">
+        <div class="value-item">
+          <span class="value-number">01</span>
+          <p><strong>Rigour.</strong> Every claim is researched, every project visited, every quote verified. We fact-check obsessively.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-number">02</span>
+          <p><strong>Clarity.</strong> We write in plain language, avoiding jargon unless it serves the reader. Good design writing should be accessible.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-number">03</span>
+          <p><strong>Independence.</strong> Our only allegiance is to our readers. We are not beholden to advertisers, brands, or trends.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-number">04</span>
+          <p><strong>Beauty.</strong> We believe in the power of well-composed images and typography to enhance understanding and pleasure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="contact-cta">
+      <h3>Get in touch</h3>
+      <p>We welcome pitches, feedback, and conversations about the built environment. Reach our editors directly.</p>
+      <a href="mailto:editors@edgesandinteriors.com">editors@edgesandinteriors.com</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.4rem; margin-bottom:1rem;">Edges <span>&</span> Interiors</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Edges & Interiors. All rights reserved.</span>
+        <span>Made with consideration for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org for AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Edges & Interiors",
+    "description": "Independent editorial publication covering interior design, architecture, and material culture.",
+    "url": "https://www.edgesandinteriors.com/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Edges & Interiors",
+      "foundingDate": "2018",
+      "founder": {
+        "@type": "Person",
+        "name": "Elena Marchetti"
+      },
+      "editor": {
+        "@type": "Person",
+        "name": "Elena Marchetti"
+      }
+    }
+  }
+  </script>
+
+  <script>
+    // Smooth scroll for any internal anchors (just in case)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer — Edges & Interiors</title>
+  <meta name="description" content="Disclaimer for Edges & Interiors. Important limitations on liability and use of our website content.">
+  <meta name="author" content="Edges & Interiors Editorial">
+  <link rel="canonical" href="https://www.edgesandinteriors.com/disclaimer.html">
+  <meta property="og:title" content="Disclaimer — Edges & Interiors">
+  <meta property="og:description" content="Important limitations on liability and use of our website content.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.edgesandinteriors.com/disclaimer.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Disclaimer — Edges & Interiors">
+  <meta name="twitter:description" content="Important limitations on liability and use of our website content.">
+  <style>
+    /* ---------- RESET & VARIABLES (same as cookies page) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #2c2c2c;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border: #e0dbd4;
+      --border-dark: #cbc4bb;
+      --accent: #9b6b4b;
+      --accent-soft: #b38b6d;
+      --muted: #6f6a64;
+      --muted-light: #9e968e;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --radius-sm: 2px;
+      --radius-md: 4px;
+      --radius-lg: 8px;
+      --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.04), 0 12px 28px rgba(0, 0, 0, 0.04);
+      --max-width: 1280px;
+      --font-size-base: 1.0625rem;
+      --line-height-base: 1.75;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 100%;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: var(--line-height-base);
+      font-size: var(--font-size-base);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+    }
+
+    .meta .category {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    .meta .reading-time {
+      font-size: 0.8rem;
+      color: var(--muted-light);
+    }
+
+    .meta .reading-time::before {
+      content: "·";
+      margin-right: 0.5rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(250, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .logo span {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav-links a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: white;
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- DISCLAIMER PAGE SPECIFIC ---------- */
+    .disclaimer-hero {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .disclaimer-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .disclaimer-hero p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .disclaimer-content {
+      max-width: 820px;
+      margin: 0 auto 4rem;
+    }
+
+    .disclaimer-content h2 {
+      font-size: 1.9rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .disclaimer-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .disclaimer-content h3 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .disclaimer-content h4 {
+      font-size: 1.15rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .disclaimer-content ul,
+    .disclaimer-content ol {
+      margin: 0 0 1.5rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .disclaimer-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .disclaimer-content strong {
+      color: var(--ink);
+    }
+
+    .disclaimer-content .highlight-box {
+      background: var(--paper-warm);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .disclaimer-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .disclaimer-content .contact-ref {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .disclaimer-content .contact-ref p {
+      margin-bottom: 0.5rem;
+    }
+
+    .disclaimer-content .contact-ref a {
+      text-decoration: underline;
+      text-decoration-color: var(--border-dark);
+      text-underline-offset: 3px;
+    }
+
+    .disclaimer-content .contact-ref a:hover {
+      text-decoration-color: var(--accent);
+    }
+
+    .disclaimer-content .updated {
+      font-size: 0.9rem;
+      color: var(--muted-light);
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    .disclaimer-content .legal-note {
+      font-size: 0.9rem;
+      color: var(--muted-light);
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 0 2.5rem;
+      margin-top: 3rem;
+      background: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-light);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted-light);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .disclaimer-content {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .disclaimer-hero h1 { font-size: 2.2rem; }
+      .disclaimer-hero p { font-size: 1.05rem; }
+      .disclaimer-content h2 { font-size: 1.6rem; }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1rem; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .disclaimer-hero h1 { font-size: 1.9rem; }
+    }
+
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Edges <span>&</span> Interiors</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">Search</button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Disclaimer Hero -->
+    <section class="disclaimer-hero">
+      <h1>Disclaimer</h1>
+      <p>Edges &amp; Interiors provides content for general informational and educational purposes only. By using this website, you acknowledge and accept the limitations outlined on this page.</p>
+    </section>
+
+    <!-- Disclaimer Content -->
+    <article class="disclaimer-content">
+      <span class="updated">Last updated: 1 June 2025</span>
+
+      <div class="highlight-box">
+        <p><strong>In short:</strong> The information on this website is provided in good faith and for general guidance only. We make no warranties about its completeness, accuracy, or reliability. Any reliance you place on this information is strictly at your own risk. We are not liable for any loss or damage arising from its use. Always consult a qualified professional for specific advice.</p>
+      </div>
+
+      <h2>1. General Information Only</h2>
+      <p>The content published on Edges &amp; Interiors (including but not limited to articles, guides, images, opinions, and data) is provided for general informational and educational purposes only. It is not intended to be a substitute for professional advice, whether architectural, engineering, legal, financial, or otherwise.</p>
+      <p>While we strive to keep information current and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
+
+      <h2>2. No Professional Relationship</h2>
+      <p>Your use of this website does not create a professional-client relationship between you and Edges &amp; Interiors, its editors, contributors, or affiliates. You should not act or refrain from acting on the basis of any content on this site without seeking appropriate professional advice tailored to your specific circumstances.</p>
+      <p>Any reliance you place on the material on this website is strictly at your own risk. We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the website, or by anyone who may be informed of any of its contents.</p>
+
+      <h2>3. External Links Disclaimer</h2>
+      <p>This website may contain links to other websites or content belonging to or originating from third parties. These links are provided for your convenience and do not signify that we endorse the content of such external sites.</p>
+      <p>We do not investigate, monitor, or check such external links for accuracy, adequacy, validity, reliability, availability, or completeness. We are not responsible for the content, privacy policies, or practices of any third-party websites. You access third-party sites at your own risk.</p>
+
+      <h2>4. Accuracy of Information</h2>
+      <p>We make every effort to ensure that the information presented on Edges &amp; Interiors is accurate and up to date. However, the fields of interior design, architecture, and construction are constantly evolving, and errors or omissions may occur.</p>
+      <ul>
+        <li>We do not warrant that any information is free from errors, omissions, or inaccuracies.</li>
+        <li>We reserve the right to make changes to the content at any time without notice.</li>
+        <li>Any product, service, or company mentioned is not an endorsement unless explicitly stated.</li>
+      </ul>
+
+      <h2>5. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law, Edges &amp; Interiors, its owners, editors, contributors, and affiliates shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in connection with your access to, use of, or inability to use this website or any content provided herein.</p>
+      <p>This includes, without limitation, any loss of profit, loss of data, loss of goodwill, or any other intangible losses, even if we have been advised of the possibility of such damages. Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability for certain damages, so some of the above limitations may not apply to you.</p>
+
+      <h2>6. No Warranties</h2>
+      <p>The website and its content are provided on an "as is" and "as available" basis. We make no warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+      <p>We do not warrant that the website will be uninterrupted, timely, secure, or error-free, or that defects will be corrected. You assume full responsibility and risk of loss resulting from your use of the website.</p>
+
+      <h2>7. Professional Disclaimer</h2>
+      <p>Edges &amp; Interiors is a publication focused on design, architecture, and interiors. We are not a licensed architecture firm, engineering consultancy, or legal practice. Nothing on this site should be construed as professional architectural, engineering, or legal advice.</p>
+      <p>Before undertaking any interior design, renovation, or construction project, you should consult with a qualified professional (such as a licensed architect, interior designer, or engineer) who can assess your specific situation and provide appropriate guidance.</p>
+
+      <h2>8. Views and Opinions</h2>
+      <p>Any views or opinions expressed on this website are those of the authors and do not necessarily reflect the official policy or position of Edges &amp; Interiors or its affiliates. Content is subject to change without notice.</p>
+
+      <h2>9. Updates and Changes</h2>
+      <p>We may update this Disclaimer from time to time to reflect changes in our practices or applicable laws. Any changes will be posted on this page with an updated "Last updated" date. Your continued use of the website after any such changes constitutes your acceptance of the new terms.</p>
+
+      <h2>10. Contact Us</h2>
+      <p>If you have any questions about this Disclaimer or the content on our website, please contact us:</p>
+
+      <div class="contact-ref">
+        <p><strong>Edges &amp; Interiors — Editorial Team</strong></p>
+        <p>Email: <a href="mailto:editorial@edgesandinteriors.com">editorial@edgesandinteriors.com</a></p>
+        <p>Post: Studio 4, 12 Clerkenwell Road, London EC1M 5PQ, United Kingdom</p>
+        <p style="margin-bottom:0;">For information about how we handle personal data, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+
+      <p class="legal-note">This Disclaimer is provided for informational purposes and does not constitute legal advice. If you require legal advice, please consult a qualified professional.</p>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.4rem; margin-bottom:1rem;">Edges <span>&</span> Interiors</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Edges &amp; Interiors. All rights reserved.</span>
+        <span>Made with consideration for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclaimer — Edges & Interiors",
+    "description": "Disclaimer for Edges & Interiors. Important limitations on liability and use of our website content.",
+    "url": "https://www.edgesandinteriors.com/disclaimer.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edges & Interiors",
+      "email": "editorial@edgesandinteriors.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Studio 4, 12 Clerkenwell Road",
+        "addressLocality": "London",
+        "postalCode": "EC1M 5PQ",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+
+  <script>
+    // ---------- SEARCH TOGGLE ----------
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchInput.focus();
+      }
+    });
+
+    // ---------- SMOOTH SCROLL FOR INTERNAL LINKS ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Edges & Interiors</title>
+  <meta name="description" content="Contact the editorial team at Edges & Interiors. Editorial inquiries, advertising, and general feedback.">
+  <meta name="author" content="Edges & Interiors Editorial">
+  <link rel="canonical" href="https://www.edgesandinteriors.com/contact.html">
+  <meta property="og:title" content="Contact — Edges & Interiors">
+  <meta property="og:description" content="Reach the editorial team behind Edges & Interiors. We welcome considered inquiries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.edgesandinteriors.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Edges & Interiors">
+  <meta name="twitter:description" content="Reach the editorial team behind Edges & Interiors.">
+  <style>
+    /* ---------- RESET & VARIABLES (same as index for consistency) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #2c2c2c;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border: #e0dbd4;
+      --border-dark: #cbc4bb;
+      --accent: #9b6b4b;
+      --accent-soft: #b38b6d;
+      --muted: #6f6a64;
+      --muted-light: #9e968e;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --radius-sm: 2px;
+      --radius-md: 4px;
+      --radius-lg: 8px;
+      --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.04), 0 12px 28px rgba(0, 0, 0, 0.04);
+      --max-width: 1280px;
+      --font-size-base: 1.0625rem;
+      --line-height-base: 1.75;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 100%;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: var(--line-height-base);
+      font-size: var(--font-size-base);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+    }
+
+    .meta .category {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    .meta .reading-time {
+      font-size: 0.8rem;
+      color: var(--muted-light);
+    }
+
+    .meta .reading-time::before {
+      content: "·";
+      margin-right: 0.5rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(250, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .logo span {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav-links a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: white;
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- CONTACT PAGE SPECIFIC ---------- */
+    .contact-hero {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .contact-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-hero p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 4rem;
+    }
+
+    .contact-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .contact-detail {
+      margin-bottom: 2rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+    }
+
+    .contact-detail h4 {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-light);
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .contact-detail a {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      text-decoration: underline;
+      text-decoration-color: var(--border-dark);
+      text-underline-offset: 4px;
+    }
+
+    .contact-detail a:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+
+    .contact-detail span {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+    }
+
+    .contact-note {
+      background: var(--paper-warm);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact-note strong {
+      color: var(--ink-soft);
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+    }
+
+    .contact-form h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form > p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-family: var(--sans);
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--paper);
+      color: var(--ink);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 107, 75, 0.08);
+    }
+
+    .form-group textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236f6a64' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-submit {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 100%;
+    }
+
+    .form-submit:hover {
+      background: var(--accent);
+    }
+
+    .form-message {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .form-message.success {
+      display: block;
+      background: #edf7ed;
+      border: 1px solid #c3e6c3;
+      color: #2e6b2e;
+    }
+
+    .form-message.error {
+      display: block;
+      background: #fdf0f0;
+      border: 1px solid #f0c3c3;
+      color: #8b2e2e;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 0 2.5rem;
+      margin-top: 3rem;
+      background: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-light);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted-light);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .contact-hero h1 { font-size: 2.2rem; }
+      .contact-hero p { font-size: 1.05rem; }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1rem; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-form {
+        padding: 1.75rem 1.25rem;
+      }
+      .contact-hero h1 { font-size: 1.9rem; }
+    }
+
+    /* utility */
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Edges <span>&</span> Interiors</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">Search</button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <h1>Get in Touch</h1>
+      <p>We welcome considered inquiries from readers, designers, architects, and potential contributors. Whether you have a story tip, a project to share, or a question about our editorial approach, we’d like to hear from you.</p>
+    </section>
+
+    <!-- Contact Grid -->
+    <div class="contact-grid">
+      <!-- Left: Contact Info -->
+      <div class="contact-info">
+        <h2>Direct Lines</h2>
+        <p>For the fastest response, please use the appropriate email below. We read every message, though we may not be able to reply to all of them personally.</p>
+
+        <div class="contact-detail">
+          <h4>Editorial &amp; Submissions</h4>
+          <a href="mailto:editors@edgesandinteriors.com">editors@edgesandinteriors.com</a>
+          <p style="font-size:0.95rem; margin-top:0.5rem; color:var(--muted);">Pitches, article ideas, and project features.</p>
+        </div>
+
+        <div class="contact-detail">
+          <h4>Advertising &amp; Partnerships</h4>
+          <a href="mailto:ads@edgesandinteriors.com">ads@edgesandinteriors.com</a>
+          <p style="font-size:0.95rem; margin-top:0.5rem; color:var(--muted);">Sponsored content, display advertising, and brand collaborations.</p>
+        </div>
+
+        <div class="contact-detail">
+          <h4>General Inquiries</h4>
+          <a href="mailto:hello@edgesandinteriors.com">hello@edgesandinteriors.com</a>
+          <p style="font-size:0.95rem; margin-top:0.5rem; color:var(--muted);">Anything else—feedback, corrections, or just to say hello.</p>
+        </div>
+
+        <div class="contact-detail">
+          <h4>Postal Address</h4>
+          <span>Edges &amp; Interiors Editorial<br>Studio 4, 12 Clerkenwell Road<br>London EC1M 5PQ<br>United Kingdom</span>
+        </div>
+
+        <div class="contact-note">
+          <strong>Response time:</strong> We typically respond within 2–3 business days. For urgent editorial matters, please mark your subject line as “URGENT”.
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <p>Use the form below and we’ll route your message to the right person. All fields are required unless marked optional.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="editorial">Editorial / Story Pitch</option>
+              <option value="advertising">Advertising / Partnership</option>
+              <option value="feedback">Feedback / Correction</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what’s on your mind…" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Message</button>
+          <div class="form-message" id="formMessage" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.4rem; margin-bottom:1rem;">Edges <span>&</span> Interiors</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Edges &amp; Interiors. All rights reserved.</span>
+        <span>Made with consideration for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Edges & Interiors",
+    "description": "Contact the editorial team at Edges & Interiors.",
+    "url": "https://www.edgesandinteriors.com/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Edges & Interiors",
+      "email": "editors@edgesandinteriors.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Studio 4, 12 Clerkenwell Road",
+        "addressLocality": "London",
+        "postalCode": "EC1M 5PQ",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+
+  <script>
+    // ---------- SEARCH TOGGLE (from index) ----------
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchInput.focus();
+      }
+    });
+
+    // ---------- CONTACT FORM HANDLER ----------
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Clear previous message
+      formMessage.className = 'form-message';
+      formMessage.textContent = '';
+
+      // Simple validation
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !subject || !message) {
+        formMessage.className = 'form-message error';
+        formMessage.textContent = 'Please fill in all required fields.';
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        formMessage.className = 'form-message error';
+        formMessage.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      // Simulate submission
+      formMessage.className = 'form-message success';
+      formMessage.textContent = 'Thank you, ' + name + '. Your message has been sent. We’ll be in touch shortly.';
+      contactForm.reset();
+
+      // In a real implementation, you'd send the data to a server here.
+    });
+
+    // ---------- SMOOTH SCROLL FOR INTERNAL LINKS ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

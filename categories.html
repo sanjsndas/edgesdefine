@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — Edges & Interiors | Independent Design Journal</title>
+  <meta name="description" content="Browse all categories on Edges & Interiors — interior design, architecture, materials, lighting, space planning, and more.">
+  <meta name="author" content="Edges & Interiors Editorial">
+  <link rel="canonical" href="https://www.edgesandinteriors.com/categories.html">
+  <meta property="og:title" content="Categories — Edges & Interiors">
+  <meta property="og:description" content="Explore our editorial categories: interior design, architecture, materials, lighting, and space planning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.edgesandinteriors.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ---------- RESET & VARIABLES (inherited from main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #2c2c2c;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border: #e0dbd4;
+      --border-dark: #cbc4bb;
+      --accent: #9b6b4b;
+      --accent-soft: #b38b6d;
+      --muted: #6f6a64;
+      --muted-light: #9e968e;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --radius-sm: 2px;
+      --radius-md: 4px;
+      --radius-lg: 8px;
+      --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.04), 0 12px 28px rgba(0, 0, 0, 0.04);
+      --max-width: 1280px;
+      --font-size-base: 1.0625rem;
+      --line-height-base: 1.75;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 100%;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: var(--line-height-base);
+      font-size: var(--font-size-base);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+    }
+
+    .meta .category {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(250, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .logo span {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    /* ---------- CATEGORIES PAGE SPECIFIC ---------- */
+    .categories-header {
+      margin: 3.5rem 0 2rem;
+      text-align: center;
+    }
+
+    .categories-header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .categories-header .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      font-family: var(--serif);
+      font-style: italic;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .categories-last-updated {
+      font-size: 0.9rem;
+      color: var(--muted-light);
+      margin-top: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .categories-content {
+      max-width: 860px;
+      margin: 0 auto 4rem;
+    }
+
+    .categories-section {
+      margin-bottom: 3rem;
+    }
+
+    .categories-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+    }
+
+    .categories-section h3 {
+      font-size: 1.3rem;
+      margin: 1.75rem 0 1rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .categories-section p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .categories-section ul, .categories-section ol {
+      margin: 0 0 1.5rem 1.75rem;
+      color: var(--ink-soft);
+      font-size: 1rem;
+    }
+
+    .categories-section li {
+      margin-bottom: 0.6rem;
+      padding-left: 0.25rem;
+    }
+
+    .categories-section strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .categories-section a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: var(--border-dark);
+    }
+
+    .categories-section a:hover {
+      text-decoration-color: var(--accent);
+    }
+
+    .categories-highlight {
+      background: var(--paper-warm);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 2rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 2rem 0;
+    }
+
+    .categories-highlight p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+    }
+
+    .categories-highlight strong {
+      color: var(--accent);
+    }
+
+    /* Category grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.75rem;
+      margin: 2rem 0 3rem;
+    }
+
+    .category-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem 1.5rem 1.5rem;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .category-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-dark);
+      transform: translateY(-2px);
+    }
+
+    .category-card h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    .category-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .category-card .category-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+      align-self: flex-start;
+    }
+
+    .category-card .category-link:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    /* count badge */
+    .category-count {
+      display: inline-block;
+      background: var(--paper-warm);
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      margin-left: 0.6rem;
+      vertical-align: middle;
+      font-family: var(--sans);
+    }
+
+    .categories-contact-block {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.5rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .categories-contact-block h3 {
+      margin-bottom: 0.75rem;
+    }
+
+    .categories-contact-block p {
+      margin-bottom: 1.5rem;
+      color: var(--muted);
+    }
+
+    .categories-contact-block a {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--paper);
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+
+    .categories-contact-block a:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 0 2.5rem;
+      margin-top: 3rem;
+      background: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-light);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted-light);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .categories-header h1 {
+        font-size: 2.6rem;
+      }
+      .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.7rem; }
+      .categories-header h1 {
+        font-size: 2.2rem;
+      }
+      .categories-header .subhead {
+        font-size: 1rem;
+      }
+      .categories-content {
+        padding: 0 0.5rem;
+      }
+      .categories-section h2 {
+        font-size: 1.6rem;
+      }
+      .categories-section h3 {
+        font-size: 1.15rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.8rem;
+      }
+      .categories-highlight {
+        padding: 1.25rem 1.5rem;
+      }
+      .categories-contact-block {
+        padding: 1.75rem 1.5rem;
+      }
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+      }
+      .category-card {
+        padding: 1.4rem 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1rem; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .categories-header h1 {
+        font-size: 1.9rem;
+      }
+      .categories-section h2 {
+        font-size: 1.4rem;
+      }
+      .categories-section ul, .categories-section ol {
+        margin-left: 1.25rem;
+      }
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* utility */
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Edges <span>&</span> Interiors</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html" style="color: var(--ink); border-bottom-color: var(--accent);">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- CATEGORIES HEADER -->
+    <section class="categories-header">
+      <div class="meta" style="justify-content: center;">
+        <span class="category">Editorial Index</span>
+      </div>
+      <h1>Categories</h1>
+      <p class="subhead">Browse our journal by subject — from interior design and architecture to materials, lighting, and space planning.</p>
+      <p class="categories-last-updated">Last updated: 15 January 2025</p>
+    </section>
+
+    <!-- CATEGORIES CONTENT -->
+    <div class="categories-content">
+      <!-- INTRO -->
+      <section class="categories-section">
+        <h2>1. Explore by Category</h2>
+        <p>Edges & Interiors publishes independent, in-depth writing on the built environment. Our categories reflect the subjects we return to most often — the intersections of design, material, light, and space. Each category gathers essays, case studies, interviews, and visual stories.</p>
+        <div class="categories-highlight">
+          <p><strong>Plain-language summary:</strong> Every article is filed under one or more categories. Use these pages to find the themes that matter to you. Our editorial team curates each category with care.</p>
+        </div>
+      </section>
+
+      <!-- CATEGORY GRID -->
+      <section class="categories-section">
+        <h2>2. All Categories</h2>
+        <p>Below is a complete list of our active categories. Click any card to view the latest articles, or browse the full archive on the <a href="index.html">home page</a>.</p>
+        
+        <div class="category-grid">
+          <!-- Interior Design -->
+          <div class="category-card">
+            <h3>Interior Design <span class="category-count">42</span></h3>
+            <p>Residential and commercial interiors, from concept to detail. We look at how designers shape atmosphere, function, and materiality.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Architecture -->
+          <div class="category-card">
+            <h3>Architecture <span class="category-count">38</span></h3>
+            <p>Buildings, structures, and the ideas behind them. Essays on form, context, sustainability, and the architect’s role.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Materials -->
+          <div class="category-card">
+            <h3>Materials <span class="category-count">27</span></h3>
+            <p>Stone, timber, metal, glass, clay, and composites. How material choices inform texture, longevity, and environmental impact.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Lighting -->
+          <div class="category-card">
+            <h3>Lighting <span class="category-count">19</span></h3>
+            <p>Natural and artificial light in interiors and architecture. Fixtures, daylighting, shadow, and the mood of illumination.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Space Planning -->
+          <div class="category-card">
+            <h3>Space Planning <span class="category-count">24</span></h3>
+            <p>Layout, circulation, zoning, and the ergonomics of movement. How thoughtful planning transforms the experience of a room.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Sustainability -->
+          <div class="category-card">
+            <h3>Sustainability <span class="category-count">16</span></h3>
+            <p>Passive design, low-carbon materials, adaptive reuse, and the environmental responsibilities of building and making.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Craft & Making -->
+          <div class="category-card">
+            <h3>Craft & Making <span class="category-count">21</span></h3>
+            <p>Workshops, artisans, and the hands behind the built environment. Traditional techniques meet contemporary practice.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Profiles & Interviews -->
+          <div class="category-card">
+            <h3>Profiles & Interviews <span class="category-count">33</span></h3>
+            <p>Conversations with architects, designers, makers, and thinkers. First-person insights into process and philosophy.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- Travel & Place -->
+          <div class="category-card">
+            <h3>Travel & Place <span class="category-count">14</span></h3>
+            <p>Design destinations, regional vernacular, and the way place shapes building and interior traditions.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+          <!-- History & Theory -->
+          <div class="category-card">
+            <h3>History & Theory <span class="category-count">18</span></h3>
+            <p>Movements, manifestos, and ideas that continue to inform contemporary design and spatial thinking.</p>
+            <a href="#" class="category-link">View category →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW WE ORGANISE -->
+      <section class="categories-section">
+        <h2>3. How We Organise Content</h2>
+        <p>Every article on Edges & Interiors is assigned at least one primary category. Longer features may also appear in secondary categories where relevant. Our editorial team reviews category assignments regularly to ensure they remain useful and accurate.</p>
+        <p>If you are looking for a specific topic that isn’t listed here, try the <a href="#">search function</a> or <a href="contact.html">contact us</a> — we welcome suggestions for new categories.</p>
+        
+        <h3>3.1 Editorial independence</h3>
+        <p>Categories are not sponsored. We do not accept payment to place content in a particular category, and our editorial taxonomy is managed independently of any commercial relationship.</p>
+        
+        <h3>3.2 Contributing</h3>
+        <p>We welcome pitches and submissions. If you have a story that fits one of our categories, please review our <a href="contact.html">contact page</a> for submission guidelines. We do not charge for editorial consideration.</p>
+      </section>
+
+      <!-- FEATURED ARTICLE (example) -->
+      <section class="categories-section">
+        <h2>4. Featured in Categories</h2>
+        <p>Recent highlights from across our editorial sections.</p>
+        <ul>
+          <li><strong>Interior Design:</strong> <a href="#">“The Quiet Radicalism of the Unfinished Room”</a> — on imperfection and lived-in spaces.</li>
+          <li><strong>Architecture:</strong> <a href="#">“Concrete that Breathes”</a> — a new generation of permeable structural materials.</li>
+          <li><strong>Materials:</strong> <a href="#">“A Field Guide to Reclaimed Timber”</a> — sourcing, grading, and finishing.</li>
+          <li><strong>Lighting:</strong> <a href="#">“After Sunset: Designing with Warm Dimming”</a> — the science and mood of evening light.</li>
+          <li><strong>Space Planning:</strong> <a href="#">“The 3-Metre Rule”</a> — on circulation and the psychology of distance.</li>
+        </ul>
+      </section>
+
+      <!-- CONTACT / SUGGEST A CATEGORY -->
+      <section class="categories-section">
+        <h2>5. Suggest a Category or Topic</h2>
+        <p>Our readers often point us toward subjects we should be covering. If you have a suggestion for a new category or a topic we should explore, we’d like to hear from you.</p>
+        <div class="categories-contact-block">
+          <h3>Edges & Interiors — Editorial</h3>
+          <p>We read every message. Response times may vary, but we aim to reply within 5 working days.</p>
+          <a href="mailto:editors@edgesandinteriors.com">editors@edgesandinteriors.com</a>
+        </div>
+      </section>
+
+      <p style="font-size: 0.9rem; color: var(--muted-light); text-align: center; margin-top: 3rem;">Categories are reviewed quarterly. This page was last updated on 15 January 2025.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.4rem; margin-bottom:1rem;">Edges <span>&</span> Interiors</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Edges & Interiors. All rights reserved.</span>
+        <span>Made with consideration for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org for CategoriesPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Categories — Edges & Interiors",
+    "description": "Browse all categories on Edges & Interiors — interior design, architecture, materials, lighting, space planning, and more.",
+    "url": "https://www.edgesandinteriors.com/categories.html",
+    "about": {
+      "@type": "Organization",
+      "name": "Edges & Interiors",
+      "foundingDate": "2018",
+      "founder": {
+        "@type": "Person",
+        "name": "Elena Marchetti"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Editorial Categories",
+      "description": "All active categories on Edges & Interiors.",
+      "numberOfItems": 10,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Interior Design" },
+        { "@type": "ListItem", "position": 2, "name": "Architecture" },
+        { "@type": "ListItem", "position": 3, "name": "Materials" },
+        { "@type": "ListItem", "position": 4, "name": "Lighting" },
+        { "@type": "ListItem", "position": 5, "name": "Space Planning" },
+        { "@type": "ListItem", "position": 6, "name": "Sustainability" },
+        { "@type": "ListItem", "position": 7, "name": "Craft & Making" },
+        { "@type": "ListItem", "position": 8, "name": "Profiles & Interviews" },
+        { "@type": "ListItem", "position": 9, "name": "Travel & Place" },
+        { "@type": "ListItem", "position": 10, "name": "History & Theory" }
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    // Smooth scroll for any internal anchors (just in case)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
